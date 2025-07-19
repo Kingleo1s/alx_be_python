@@ -17,7 +17,7 @@ match priority:
     case "low":
         reminder_message = f"Reminder: '{task}' is a low priority task"
     case _:
-        reminder_message = f"⚠️ '{task}' has an unknown priority level."
+        reminder_message = f"'{task}' has an unknown priority level."
         print(reminder_message)
         exit()  # Exit if invalid priority
 
