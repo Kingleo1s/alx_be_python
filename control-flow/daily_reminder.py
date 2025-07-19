@@ -18,4 +18,12 @@ match priority:
         reminder_message = f"Reminder: '{task}' is a low priority task"
     case _:
         reminder_message = f"⚠️ '{task}' has an unknown priority level."
-        print(reminder_messa_
+        print(reminder_message)
+        exit()  # Exit if invalid priority
+
+# Check if the task is time-bound
+if time_bound == "yes":
+    reminder_message += " that requires immediate attention today!"
+
+# Final output
+print("\n" + reminder_message)
