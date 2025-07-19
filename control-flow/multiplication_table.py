@@ -12,4 +12,4 @@ try:
         print(f"{number} * {i} = {product}")
 
 except ValueError:
-    print("⚠️ Please enter a valid integer.")
+    print("Please enter a valid integer.")
